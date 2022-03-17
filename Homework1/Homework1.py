@@ -4,6 +4,17 @@
 # In[1]:
 
 
+# • read an image 1 from hard disk
+# • display it
+# • read an image 2 from hard disk
+# • display it
+# • rescale image 1 50%
+# • concatenate horizontal image 1-2
+# • display
+# • concatenate vertical image 1-2
+# • save vertical concatenated image
+
+
 import cv2
 
 def scale_image(image, scale_factor):
