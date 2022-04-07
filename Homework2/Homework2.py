@@ -4,19 +4,6 @@
 # In[ ]:
 
 
-'''
-• read image “tulips.jpg”
-• change its background to blue, black, green, red and record all of
-them as new images
-• using matplotlib display original image and four images that have
-been generated
-
-'''
-
-
-# In[ ]:
-
-
 import cv2 as cv
 import matplotlib.pyplot as plt
 
