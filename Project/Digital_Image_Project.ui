@@ -182,7 +182,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Open</string>
@@ -209,6 +212,12 @@ QToolButton:pressed{
            </item>
            <item>
             <widget class="QToolButton" name="closeButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
               <string notr="true">QToolButton{
 	background-color: white;
@@ -228,7 +237,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Close</string>
@@ -236,10 +248,25 @@ QToolButton:pressed{
              <property name="checkable">
               <bool>false</bool>
              </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextOnly</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>false</bool>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::NoArrow</enum>
+             </property>
             </widget>
            </item>
            <item>
             <widget class="QToolButton" name="snapButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
               <string notr="true">QToolButton{
 	background-color: white;
@@ -259,7 +286,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Snap</string>
@@ -306,7 +336,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Load Image</string>
@@ -318,6 +351,9 @@ QToolButton:pressed{
            </item>
            <item>
             <widget class="QToolButton" name="cropAndSaveButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
               <string notr="true">QToolButton{
 	background-color: white;
@@ -337,7 +373,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Crop and Save</string>
@@ -373,6 +412,9 @@ QToolButton:pressed{
               </property>
               <item>
                <widget class="QToolButton" name="convertToGrayButton">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="styleSheet">
                  <string notr="true">QToolButton{
 	background-color: white;
@@ -392,7 +434,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                 </property>
                 <property name="text">
                  <string>Convert to Gray</string>
@@ -404,6 +449,9 @@ QToolButton:pressed{
               </item>
               <item>
                <widget class="QToolButton" name="convertToBlackAndWhiteButton">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="styleSheet">
                  <string notr="true">QToolButton{
 	background-color: white;
@@ -423,7 +471,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                 </property>
                 <property name="text">
                  <string>Convert to Black and White</string>
@@ -435,6 +486,9 @@ QToolButton:pressed{
               </item>
               <item>
                <widget class="QToolButton" name="take2DFastFourierTransformButton">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="styleSheet">
                  <string notr="true">QToolButton{
 	background-color: white;
@@ -454,7 +508,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                 </property>
                 <property name="text">
                  <string>Take 2-d fast Fourier Transform</string>
@@ -472,6 +529,9 @@ QToolButton:pressed{
                 <layout class="QVBoxLayout" name="verticalLayout_3">
                  <item>
                   <widget class="QToolButton" name="addGaussianNoiseButton">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">QToolButton{
 	background-color: white;
@@ -491,7 +551,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                    </property>
                    <property name="text">
                     <string>Gaussian</string>
@@ -503,6 +566,9 @@ QToolButton:pressed{
                  </item>
                  <item>
                   <widget class="QToolButton" name="addPepperAndSaltNoiseButton">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">QToolButton{
 	background-color: white;
@@ -522,7 +588,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                    </property>
                    <property name="text">
                     <string>Pepper and Salt</string>
@@ -543,6 +612,9 @@ QToolButton:pressed{
                 <layout class="QVBoxLayout" name="verticalLayout_4">
                  <item>
                   <widget class="QToolButton" name="meanFilterButton">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">QToolButton{
 	background-color: white;
@@ -562,7 +634,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                    </property>
                    <property name="text">
                     <string>Mean</string>
@@ -574,6 +649,9 @@ QToolButton:pressed{
                  </item>
                  <item>
                   <widget class="QToolButton" name="medianFilterButton">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">QToolButton{
 	background-color: white;
@@ -593,7 +671,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                    </property>
                    <property name="text">
                     <string>Median</string>
@@ -605,6 +686,9 @@ QToolButton:pressed{
                  </item>
                  <item>
                   <widget class="QToolButton" name="gaussianFilterButton">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">QToolButton{
 	background-color: white;
@@ -624,7 +708,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
                    </property>
                    <property name="text">
                     <string>Gaussian</string>
@@ -642,6 +729,9 @@ QToolButton:pressed{
            </item>
            <item>
             <widget class="QToolButton" name="edgesButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
               <string notr="true">QToolButton{
 	background-color: white;
@@ -661,7 +751,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Edges</string>
@@ -673,6 +766,9 @@ QToolButton:pressed{
            </item>
            <item>
             <widget class="QToolButton" name="cornersButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
               <string notr="true">QToolButton{
 	background-color: white;
@@ -692,7 +788,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Corners</string>
@@ -718,6 +817,9 @@ color: white;</string>
            </item>
            <item>
             <widget class="QToolButton" name="helpButton">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
              <property name="styleSheet">
               <string notr="true">QToolButton{
 	background-color: white;
@@ -737,7 +839,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Help</string>
@@ -749,6 +854,9 @@ QToolButton:pressed{
            </item>
            <item>
             <widget class="QToolButton" name="exitButton">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
              <property name="styleSheet">
               <string notr="true">QToolButton{
 	background-color: white;
@@ -768,7 +876,10 @@ QToolButton:pressed{
 	color: black;
 }
 
-</string>
+QToolButton:disabled{
+	background-color:  gray;
+	color: white;
+}</string>
              </property>
              <property name="text">
               <string>Exit</string>
@@ -784,6 +895,9 @@ QToolButton:pressed{
     </item>
     <item>
      <widget class="QFrame" name="imageFrame">
+      <property name="styleSheet">
+       <string notr="true">border: none;</string>
+      </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
@@ -791,10 +905,25 @@ QToolButton:pressed{
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_6">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
         <widget class="QLabel" name="imageLabel">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -804,6 +933,9 @@ QToolButton:pressed{
            <width>1584</width>
            <height>884</height>
           </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
          </property>
          <property name="text">
           <string/>
