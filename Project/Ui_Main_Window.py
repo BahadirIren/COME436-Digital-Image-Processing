@@ -360,10 +360,10 @@ class Ui_MainWindow(object):
         self.addGaussianNoiseButton.setCheckable(False)
         self.addGaussianNoiseButton.setObjectName("addGaussianNoiseButton")
         self.verticalLayout_3.addWidget(self.addGaussianNoiseButton)
-        self.addPepperAndSaltNoiseButton = QtWidgets.QToolButton(
+        self.addSaltAndPepperNoiseButton = QtWidgets.QToolButton(
             self.addNoiseGroupBox)
-        self.addPepperAndSaltNoiseButton.setEnabled(False)
-        self.addPepperAndSaltNoiseButton.setStyleSheet("QToolButton{\n"
+        self.addSaltAndPepperNoiseButton.setEnabled(False)
+        self.addSaltAndPepperNoiseButton.setStyleSheet("QToolButton{\n"
                                                        "    background-color: white;\n"
                                                        "    color: black;\n"
                                                        "    font-size: 12px;\n"
@@ -385,10 +385,10 @@ class Ui_MainWindow(object):
                                                        "    background-color:  gray;\n"
                                                        "    color: white;\n"
                                                        "}")
-        self.addPepperAndSaltNoiseButton.setCheckable(False)
-        self.addPepperAndSaltNoiseButton.setObjectName(
-            "addPepperAndSaltNoiseButton")
-        self.verticalLayout_3.addWidget(self.addPepperAndSaltNoiseButton)
+        self.addSaltAndPepperNoiseButton.setCheckable(False)
+        self.addSaltAndPepperNoiseButton.setObjectName(
+            "addSaltAndPepperNoiseButton")
+        self.verticalLayout_3.addWidget(self.addSaltAndPepperNoiseButton)
         self.verticalLayout_2.addWidget(self.addNoiseGroupBox)
         self.filterGroupBox = QtWidgets.QGroupBox(self.imageAnalysisGroupBox)
         self.filterGroupBox.setObjectName("filterGroupBox")
@@ -656,8 +656,8 @@ class Ui_MainWindow(object):
         self.addNoiseGroupBox.setTitle(_translate("MainWindow", "Add Noise"))
         self.addGaussianNoiseButton.setText(
             _translate("MainWindow", "Gaussian"))
-        self.addPepperAndSaltNoiseButton.setText(
-            _translate("MainWindow", "Pepper and Salt"))
+        self.addSaltAndPepperNoiseButton.setText(
+            _translate("MainWindow", "Salt and Pepper"))
         self.filterGroupBox.setTitle(_translate("MainWindow", "Filter"))
         self.meanFilterButton.setText(_translate("MainWindow", "Mean"))
         self.medianFilterButton.setText(_translate("MainWindow", "Median"))

@@ -565,7 +565,7 @@ QToolButton:disabled{
                   </widget>
                  </item>
                  <item>
-                  <widget class="QToolButton" name="addPepperAndSaltNoiseButton">
+                  <widget class="QToolButton" name="addSaltAndPepperNoiseButton">
                    <property name="enabled">
                     <bool>false</bool>
                    </property>
@@ -594,7 +594,7 @@ QToolButton:disabled{
 }</string>
                    </property>
                    <property name="text">
-                    <string>Pepper and Salt</string>
+                    <string>Salt and Pepper</string>
                    </property>
                    <property name="checkable">
                     <bool>false</bool>
